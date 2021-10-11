@@ -3,18 +3,22 @@ import java.util.Scanner;
 public class validacao {
 
 	public static void main(String[] args) {
+
+
+
+		Scanner in = new Scanner(System.in);
+	
+		System.out.println("Usuario: ");
+		String login = in.nextLine();
 		
-		int senha = 1234;
+		System.out.println("Senha: ");
+		String senha = in.nextLine();
 		
-		Scanner entrada = new Scanner(System.in);
-		System.out.println("Digite a senha");
-		
-		senha = entrada.nextInt();
-		
-		if (senha.equals(entrada)) {
-			System.out.println("Acesso permitido");
-		}else {
-			System.out.println("Acesso Negado, senha incorreta");
+		if (login.equals("rodrigo") && senha.equals("1234")) {
+			System.out.printf("Usuário %s logado com sucesso.", login);
+		} else {
+			System.out.println("Login ou senha inválidos!");
 		}
+
 	}
 }
