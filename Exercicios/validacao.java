@@ -19,6 +19,6 @@ public class validacao {
 		} else {
 			System.out.println("Login ou senha inválidos!");
 		}
-
+		in.close();
 	}
 }

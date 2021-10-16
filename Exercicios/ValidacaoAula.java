@@ -16,6 +16,7 @@ public class ValidacaoAula {
 		}else {
 			System.out.println("Acesso Negado, senha incorreta");
 		}
+		entrada.close();
 	}
 	
 }

@@ -24,6 +24,7 @@ public class VerificaTriangulo2 {
 			} else {
 				System.out.println("nao e um triangulo");
 			}
+			tri.close();
 	}
 
 }

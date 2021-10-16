@@ -24,6 +24,6 @@ public class VarificaTriangulo {
 		} else {
 			System.out.println("Nao correponde a um tringulo");
 		}
-
+		tri.close();
 	}
 }
