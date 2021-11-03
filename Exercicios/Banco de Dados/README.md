@@ -1,4 +1,4 @@
-#Atividade MongoDB
+# Atividade MongoDB
 
 Você deve criar um banco de dados novo (database) e uma coleção com um nome pertinente, de acordo com os dados e tema que você escolher. Os seguintes comandos devem ser feitos e entregues:
 Inserção de documentos
@@ -9,12 +9,15 @@ Consulta utilizando combinação entre os seletores
 Consulta paginada e ordenada (utilizar ignorar , limitar e classificar )
 
 ## Criando banco de dados
+
 use panacademia
 
 ## Criando Colection
+
 db.createCollection('Aulas')
 
 ## Inserindo dados
+
 {
     "_id" : ObjectId("617d995f6154d40c4c0c56ef"),
     "Professor" : {
@@ -34,6 +37,7 @@ db.createCollection('Aulas')
 }
 
 ## Atualizando de documentos
+
 db.getCollection('Aulas').update(
     // query 
     {
@@ -53,12 +57,15 @@ db.getCollection('Aulas').update(
 );
 
 ## Exclusao de um documento
+
 db.getCollection('Aulas').remove({ 'Aluno.nome' : 'Mateus' });
 
 ## Consulta com projeção
+
 db.getCollection('Aulas').find({},{"Aluno.nome" : 1, "Nivel" : 1, "_id" : 0})
 
 ## Consulta utilizando combinação entre os seletores
+
 db.getCollection('Aulas').find({"Aluno.Idade": {$gte: 30},"Modulo" : {$gte: 2}})
 
 ## Consulta paginada e ordenada (utilizar ignorar , limitar e classificar )
