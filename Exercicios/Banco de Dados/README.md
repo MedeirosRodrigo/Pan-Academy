@@ -8,15 +8,15 @@ Consulta com projeção
 Consulta utilizando combinação entre os seletores
 Consulta paginada e ordenada (utilizar ignorar , limitar e classificar )
 
-## Criando banco de dados
+### Criando banco de dados
 
 use panacademia
 
-## Criando Colection
+### Criando Colection
 
 db.createCollection('Aulas')
 
-## Inserindo dados
+### Inserindo dados
 
 {
     "_id" : ObjectId("617d995f6154d40c4c0c56ef"),
@@ -36,7 +36,7 @@ db.createCollection('Aulas')
     "dataHora" : ISODate("2021-07-12T10:00:20.000Z")
 }
 
-## Atualizando de documentos
+### Atualizando de documentos
 
 db.getCollection('Aulas').update(
     // query 
@@ -56,19 +56,19 @@ db.getCollection('Aulas').update(
     }
 );
 
-## Exclusao de um documento
+### Exclusao de um documento
 
 db.getCollection('Aulas').remove({ 'Aluno.nome' : 'Mateus' });
 
-## Consulta com projeção
+### Consulta com projeção
 
 db.getCollection('Aulas').find({},{"Aluno.nome" : 1, "Nivel" : 1, "_id" : 0})
 
-## Consulta utilizando combinação entre os seletores
+### Consulta utilizando combinação entre os seletores
 
 db.getCollection('Aulas').find({"Aluno.Idade": {$gte: 30},"Modulo" : {$gte: 2}})
 
-## Consulta paginada e ordenada (utilizar ignorar , limitar e classificar )
+### Consulta paginada e ordenada (utilizar ignorar , limitar e classificar )
 
 db.getCollection('Aulas').find({"Modulo" : {$gte : 3 }})
 
@@ -76,5 +76,4 @@ db.getCollection('Aulas').find().sort({"Aluno.Idade": 1})
 
 db.getCollection('Aulas').find().limit(3)
 
-)
 
