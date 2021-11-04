@@ -66,7 +66,7 @@ Consulta paginada e ordenada (utilizar ignorar , limitar e classificar )
 
 ### Consulta utilizando combinação entre os seletores
 
-		db.getCollection('Aulas').find({"Aluno.Idade": {$gte: 30},"Modulo" : {$gte: 2}})
+	db.getCollection('Aulas').find({"Aluno.Idade": {$gte: 30},"Modulo" : {$gte: 2}})
 
 ### Consulta paginada e ordenada (utilizar ignorar , limitar e classificar )
 
