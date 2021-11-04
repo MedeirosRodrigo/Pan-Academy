@@ -1,12 +1,12 @@
 # Atividade MongoDB
 
-Você deve criar um banco de dados novo (database) e uma coleção com um nome pertinente, de acordo com os dados e tema que você escolher. Os seguintes comandos devem ser feitos e entregues:
-Inserção de documentos
-Atualização de documentos
-Exclusão de documentos
-Consulta com projeção
-Consulta utilizando combinação entre os seletores
-Consulta paginada e ordenada (utilizar ignorar , limitar e classificar )
+	Você deve criar um banco de dados novo (database) e uma coleção com um nome pertinente, de acordo com os dados e tema que você escolher. Os seguintes comandos devem ser feitos e entregues:
+	Inserção de documentos
+	Atualização de documentos
+	Exclusão de documentos
+	Consulta com projeção
+	Consulta utilizando combinação entre os seletores
+	Consulta paginada e ordenada (utilizar ignorar , limitar e classificar )
 
 ### Criando banco de dados
 
