@@ -38,23 +38,23 @@ db.createCollection('Aulas')
 
 ### Atualizando de documentos
 
-db.getCollection('Aulas').update(
-    // query 
-    {
+	db.getCollection('Aulas').update(
+   	 	// query 
+   	 {
         "Aluno.nome" : "Rodrigo Medeiros"
-    },
+   	 },
     
-    // update 
-    {
+   	 // update 
+   	 {
         $set: {"Nivel" : "Intermediario"}
-    },
+   	 },
     
-    // options 
-    {
+   	 // options 
+   	 {
         "multi" : false,  // update only one document 
-        "upsert" : false  // insert a new document, if no existing document match the query 
-    }
-);
+        	"upsert" : false  // insert a new document, if no existing document match the query 
+   		 }
+	);
 
 ### Exclusao de um documento
 
